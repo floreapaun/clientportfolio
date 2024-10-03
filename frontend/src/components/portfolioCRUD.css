@@ -1,0 +1,252 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.portfolio-client {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  display: block;
+}
+
+.toggle-button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+ .grid-style {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-style {
+  width: 100px;
+  height: auto; 
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.crud-portfolio {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    flex: 1;
+  }
+  
+  .crud-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .crud-form input,
+  .crud-form select,
+  .crud-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .portfolio-item {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .portfolio-client img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .portfolio-client button {
+    margin-right: 10px;
+    padding: 5px 10px;
+  }
+
+  .view-anchor {
+    margin: 20px;
+    padding: 5px;
+    background-color: #414244;
+  }
+
+  .view-anchor a {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .upload-files {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px; 
+    padding: 10px;
+    max-width: 100%; 
+    margin: 0 auto; 
+  }
+  
+  .upload-files input {
+    width: 100%; 
+    max-width: 400px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-files button {
+    width: 100%; 
+    max-width: 200px; 
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-files button:hover {
+    background-color: #0056b3; 
+  }
+  
+  @media (min-width: 768px) {
+    .upload-files {
+      flex-direction: row; 
+      justify-content: space-between;
+      gap: 20px; 
+    }
+  
+    .upload-files input,
+    .upload-files button {
+      width: auto; 
+    }
+  }
+
+  .edit-client-button {
+    background-color: #abce0e94;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .delete-client-button {
+    background-color: #e21212;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .delete-image-button {
+    background-color: darkred; 
+    color: white; 
+    border: none; 
+
+  }
+
+  .remove.icon {
+    color: red;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 10px;
+    background-color: #000;
+  }
+  
+  .remove.icon:before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 10px;
+    background-color: #000;
+    background-color: currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .remove.icon:after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 10px;
+    background-color: #000;
+    background-color: currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .remove-image-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 10px; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .remove-image-container {
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .remove-image-container {
+      padding: 5px; 
+    }
+  }
+  
